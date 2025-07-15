@@ -1,0 +1,681 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+p,
+a,
+nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 130px;
+}
+/* nav bar styling starts here */
+section nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div.buttons button a{
+  color: rgba(49, 53, 69, 1);
+}
+nav header {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav header div:nth-child(1) {
+  width: 25%;
+  height: 35px;
+}
+nav header div:nth-child(1) img {
+  width: 100%;
+  height: 35px;
+}
+nav header div:nth-child(2) {
+  width: 70%;
+  height: 30px;
+}
+nav header div:nth-child(2) img {
+  width: 100%;
+  height: 35px;
+}
+div.lists {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+div.lists a {
+  color: rgba(49, 53, 69, 1);
+  position: relative;
+}
+div.lists a:nth-child(1):before {
+  content: " ";
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: rgba(255, 181, 115, 1);
+  bottom: 0;
+  position: absolute;
+  transition: all 1s linear;
+}
+div.lists a:nth-child(2):before {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: rgba(255, 181, 115, 1);
+  bottom: 0;
+  border-radius: 5px;
+  position: absolute;
+  transition: all 1s linear;
+}
+div.lists a:nth-child(3):before {
+  content: " ";
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: rgba(255, 181, 115, 1);
+  bottom: 0;
+  position: absolute;
+  transition: all 1s linear;
+}
+div.lists a:nth-child(4):before {
+  content: " ";
+  width: 0;
+  height: 2px;
+  border-radius: 5px;
+  background-color: rgba(255, 181, 115, 1);
+  bottom: 0;
+  position: absolute;
+  transition: all 1s linear;
+}
+div.lists a:hover::before {
+  width: 100%;
+}
+nav div.buttons {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+nav div.buttons button {
+  width: 47%;
+  height: 35px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+}
+.sign {
+  background: none;
+}
+.register {
+  background-color: rgba(255, 181, 115, 1);
+  color: white;
+}
+div.hamburger{
+    display: none;
+}
+/* nav bar styling ends here */
+/* sidenav styling */
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  margin: 15px 0;
+  text-decoration: none;
+  color: rgba(49, 53, 69, 1);
+}
+
+.sidebar-buttons {
+  margin-top: auto;
+}
+
+.sidebar .sign,
+.sidebar .register {
+  width: 100%;
+  margin-top: 10px;
+  height: 35px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 181, 115, 1);
+  color: white;
+}
+
+.close-btn {
+  font-size: 28px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Prevent scrolling when sidebar is active */
+body.no-scroll {
+  overflow: hidden;
+}
+/* container1 styling starts here */
+section div.container1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+div.container1 div {
+  width: 50%;
+  height: auto;
+}
+div.container1 div.text h1 {
+  font-size: 40px;
+  color: rgba(49, 53, 69, 1);
+  margin-bottom: 20px;
+  line-height: 45px;
+}
+div.container1 div.text p {
+  color: rgba(128, 128, 128, 1);
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 40px;
+}
+div.container1 div.text button {
+  background-color: rgba(255, 181, 115, 1);
+  color: white;
+  width: 20%;
+  height: 45px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+}
+div.container1 div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+  object-fit: cover;
+}
+div.container1 div:nth-child(2) img {
+  width: 70%;
+  height: 350px;
+}
+/* container1 styling ends here */
+/* container2 styling starts here */
+section div.container2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  color: rgba(49, 53, 69, 1);
+}
+div.container2 h3 {
+  font-size: 1.9rem;
+}
+div.container2 div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 70px;
+}
+div.prembly {
+  width: 13%;
+  height: auto;
+}
+div.container2 div div.prembly img {
+  width: 100%;
+  height: auto;
+}
+div.container2 div div.solution {
+  width: 18%;
+  height: auto;
+}
+div.container2 div div.solution img {
+  width: 100%;
+  height: auto;
+}
+/* container2 styling ends here */
+/* container3 styling starts here */
+section div.container3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+div.container3 div.one {
+  width: 40%;
+  height: auto;
+}
+div.container3 div.one img {
+  width: 100%;
+  height: auto;
+}
+div.container3 div.two {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+div.two h1 {
+  font-size: 2.7rem;
+  color: rgba(49, 53, 69, 1);
+}
+div.two .health {
+  font-size: 1.5rem;
+  color: rgb(109, 111, 118);
+  line-height: 60px;
+}
+div.two div.textt {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 30px;
+}
+div.two div.textt div {
+  width: 8%;
+  height: auto;
+  /* margin-right: 20px; */
+}
+div.two div.textt div img {
+  width: 100%;
+  height: auto;
+}
+/* div.two div.textt div.group {
+  width: 8%;
+} */
+div.two div.textt p {
+  font-size: 1.4rem;
+}
+div.click {
+  margin-top: 40px;
+}
+div.click button:nth-child(1) {
+  width: 15%;
+  height: 40px;
+  color: white;
+  border-radius: 35px;
+  background-color: rgba(255, 181, 115, 1);
+  outline: none;
+  border: none;
+  margin-right: 30px;
+}
+div.click button:nth-child(2) {
+  width: 25%;
+  height: 40px;
+  border-radius: 35px;
+  background: none;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+}
+
+/* container3 styling ends here */
+/* container4 styling starts here */
+section div.container4 {
+  width: 100%;
+  height: auto;
+  padding: 45px;
+  background-color: rgba(248, 248, 248, 1);
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+  justify-content: center;
+  align-items: center;
+}
+div.container4 .main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 50px;
+}
+div.container4 div.text-content {
+  width: 35%;
+  height: auto;
+  text-align: center;
+}
+div.container4 div.text-content h1 {
+  font-size: 1.5rem;
+  color: rgba(49, 53, 69, 1);
+}
+div.container4 .main div.window {
+  width: 31%;
+  height: auto;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgb(233, 230, 230);
+}
+div.window div.content1 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+div.window div.content1 img {
+  width: 100%;
+  height: auto;
+}
+div.window div.content2 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+div.content2 h3 {
+  color: rgba(49, 53, 69, 1);
+}
+div.window div.content2 ul {
+  margin-left: 18px;
+  color: rgba(128, 128, 128, 1);
+}
+div.window div.content2 li + li {
+  margin-top: 12px;
+}
+/* container4 styling ends here */
+/* container5 styling starts here */
+section div.container5 {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container5 form {
+  width: 28%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+div.container5 form label h1 {
+  font-size: 2rem;
+  color: rgba(49, 53, 69, 1);
+}
+div.container5 form input {
+  width: 90%;
+  height: 45px;
+  border-radius: 35px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 1);
+}
+div.container5 form button {
+  background-color: rgba(255, 181, 115, 1);
+  color: white;
+  width: 30%;
+  height: 45px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+}
+/* container5 styling ends here */
+/* container6 styling starts here */
+section div.container6 {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(49, 53, 69, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container6 div.last {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+div.container6 div.last div {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}
+div.container6 div.last div img {
+  width: 100%;
+  height: auto;
+}
+div.container6 div.last ul,
+div.last a {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+div.last p {
+  color: white;
+}
+/* container6 styling ends here */
+@media screen and (max-width: 1024px) {
+  nav header div:nth-child(1),
+  nav header div:nth-child(1) img,
+  nav header div:nth-child(2),
+  nav header div:nth-child(2) img {
+    height: auto;
+  }
+  nav header {
+    width: 15%;
+  }
+  div.lists {
+    width: 40%;
+  }
+  nav div.buttons {
+    width: 25%;
+  }
+  div.container1 div.text p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  div.container1 div.text button {
+    width: 40%;
+  }
+  div.container1 div:nth-child(2) img {
+    width: 90%;
+    height: auto;
+  }
+  section {
+    row-gap: 90px;
+  }
+  div.click button:nth-child(1) {
+    width: 35%;
+  }
+  div.click button:nth-child(2) {
+    width: 45%;
+  }
+  div.container4 div.text-content {
+    width: 70%;
+  }
+  div.container5 form {
+    width: 60%;
+  }
+  @media screen and (max-width: 820px) {
+    nav header {
+      width: 20%;
+    }
+    div.lists {
+      width: 45%;
+    }
+    nav div.buttons {
+      width: 30%;
+    }
+    div.two h1 {
+      font-size: 2rem;
+    }
+    div.two div.textt div {
+      display: none;
+    }
+    div.two div.textt p {
+      font-size: 1rem;
+    }
+    div.container4 .main {
+      flex-wrap: wrap;
+      row-gap: 40px;
+    }
+    div.container4 .main div.window {
+      width: 90%;
+    }
+    div.container5 form {
+      width: 80%;
+    }
+    div.container6 div.last div {
+      width: 30%;
+    }
+    div.container6 div.last {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    div.container1 div.text h1 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    div.container1 div.text p {
+      font-size: 9px;
+      line-height: 15px;
+      margin-bottom: 20px;
+    }
+    div.container1 div.text button {
+      width: 60%;
+      height: 30px;
+    }
+    section {
+      row-gap: 50px;
+    }
+    div.container2 h3,
+    div.two h1,
+    div.container4 div.text-content h1,
+    div.container5 form label h1 {
+      font-size: 1rem;
+    }
+    section div.container2 {
+      row-gap: 20px;
+    }
+    div.two .health {
+      font-size: 0.8rem;
+      line-height: 30px;
+    }
+    div.two div.textt p {
+      font-size: 0.8rem;
+    }
+    div.click button:nth-child(1) {
+      display: none;
+    }
+    div.click {
+      margin-top: 20px;
+    }
+    div.click button:nth-child(2) {
+      width: 80%;
+    }
+    div.container4 .main div.window {
+      width: 100%;
+    }
+    div.container6 div.last {
+      width: 95%;
+    }
+    .lists,
+  .buttons {
+    display: none;
+  }
+
+  div.hamburger {
+    display: block;
+  }
+ nav div.lists,
+ nav div.buttons {
+    display: none;
+  }
+  }
+  @media screen and (max-width: 412px) {
+    section {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  div.two .health {
+    line-height: 15px;
+  }
+  div.click button:nth-child(2) {
+    width: 100%;
+  }
+  div.container5 form button {
+    width: 50%;
+  }
+  div.container6 div.last ul, div.last a {
+ flex-wrap: wrap;
+}
+}
+@media screen and (min-width: 375px){
+      div.two .health {
+    line-height: 15px;
+  }
+  div.click button:nth-child(2) {
+    width: 100%;
+  }
+  div.container5 form button {
+    width: 50%;
+  }
+  div.container6 div.last ul{
+ flex-wrap: wrap;
+}
+}
+@media screen and (min-width: 390px){
+    div.two .health {
+    line-height: 15px;
+  }
+  div.click button:nth-child(2) {
+    width: 100%;
+  }
+  div.container5 form button {
+    width: 50%;
+  }
+  div.container6 div.last ul {
+ width: 60%;
+ flex-wrap: wrap;
+}
+}
