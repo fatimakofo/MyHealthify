@@ -129,5 +129,6 @@ div.cover {
   }
   section div.content2 {
     width: 100%;
+    margin: auto;
   }
 }
