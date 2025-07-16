@@ -125,17 +125,9 @@ div.cover {
 }
 @media screen and (max-width: 540px) {
   section div.content1 {
-    width: 100%;
-    position: relative;
+    visibility: hidden;
   }
   section div.content2 {
-    width: 80%;
-    position: absolute;
-    top: -50%;
-    bottom: -50%;
-    transform: translate(10%, 50%);
-  }
-  div.cover{
-    visibility: visible;
+    width: 100%;
   }
 }
